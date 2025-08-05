@@ -1,0 +1,36 @@
+<mat-drawer-container class="example-container">
+  <mat-drawer mode="side" opened>
+    <div class = "book-category">
+      <h2>Danh mục sách</h2>
+      <ul>
+        <li><a href="">Sách thiếu nhi</a></li>
+        <li><a href="">Sách học tiếng Nhật</a></li>
+        <li><a href="">Unibooks</a></li>
+        <li><a href="">Sách tham khảo cho học sinh</a></li>
+        <li><a href="">Sách học tiếng Anh</a></li>
+        <li><a href="">Sách học tiếng Trung</a></li>
+      </ul>
+      <h2>Lọc theo giá sản phẩm</h2>
+      <mat-slider min="200" max="500">
+        <input value="300" matSliderStartThumb>
+        <input value="500" matSliderEndThumb>
+      </mat-slider>
+      <h2>Sách bán chạy</h2>
+      <div class="book-item">
+        <img class = "cover-best" ngSrc="https://mcbooks.vn/wp-content/uploads/2024/10/Bia-3D-Destination-B2-Dap-an-tren-app-Khong-co-dap-an.jpg" alt="Book Cover" height="43" width="152">
+        <div class="book-info">
+          <p class="book-title">Destination B2 - Grammar & Vocabulary with Answer Key On MCBooks App</p>
+          <p class="book-price">189.000đ</p>
+        </div>
+      </div>
+      <div class="book-item">
+        <img class = "cover-best" ngSrc="https://mcbooks.vn/wp-content/uploads/2024/10/Bia-3D-Destination-C1C2-Dap-an-tren-app-Khong-co-dap-an.jpg" alt="Book Cover" height="43" width="152">
+        <div class="book-info">
+          <p class="book-title">Destination C1&C2 - Grammar & Vocabulary with Answer Key On MCBooks App</p>
+          <p class="book-price">178.000₫</p>
+        </div>
+      </div>
+    </div>
+  </mat-drawer>
+  <mat-drawer-content></mat-drawer-content>
+</mat-drawer-container>

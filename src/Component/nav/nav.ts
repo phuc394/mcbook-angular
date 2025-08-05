@@ -7,7 +7,7 @@ import {NgOptimizedImage} from '@angular/common';
   imports: [
     MatTabGroup,
     MatTab,
-    NgOptimizedImage
+    NgOptimizedImage,
   ],
   templateUrl: './nav.html',
   styleUrl: './nav.scss'

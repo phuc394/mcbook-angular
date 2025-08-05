@@ -1,0 +1,92 @@
+.example-container {
+  width: 80vw;
+  height: 750px;
+  margin: 10px 10px 10px 10%;
+  /* The background property is added to clearly distinguish the borders between drawer and main
+     content */
+  background: #eee;
+}
+
+mat-drawer {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1.5rem 1rem;
+  min-width: 220px;
+  max-width: 300px;
+  width: 20vw;
+  flex-shrink: 0;
+}
+
+.book-category {
+  width: 100%;
+}
+
+.book-category h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: #222;
+}
+
+.book-category ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.book-category ul li {
+  margin: 0.7rem 0;
+}
+
+.book-category ul li a {
+  color: #383434;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.book-category ul li a:hover {
+  color: #008AE6;
+}
+
+mat-slider {
+  width: 80%;
+}
+
+.book-item {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cover-best {
+  width: 3.5rem;
+  height: 4rem;
+  object-fit: cover;
+  border-radius: 0.3rem;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.2rem 0 0 0;
+}
+
+.book-price {
+  color: #e53935;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.book-title {
+  color: #005D98;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+.book-title:hover {
+  color: #008AE6;
+}
