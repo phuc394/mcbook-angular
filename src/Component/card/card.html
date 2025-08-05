@@ -1,7 +1,7 @@
 <p class ="add">Sách học từ vựng tiếng Anh đỉnh cao của Mcbooks với hàng loạt các đầu sách đến từ các tác giả nổi tiếng như Tự học
   2000 từ vựng tiếng Anh theo chủ đề của tác giả The Windy, Mind Map English Vocabulary của tác giả Hoàng Ngân…</p>
 <div class="book-list">
-@for (item of booklist; track item.id)  {
+
 <mat-card class= "book-details" appearance="outlined">
     <img class ="cover-list" src="{{item.image}}" alt="Book cover image">
     <mat-card-content>
@@ -14,7 +14,7 @@
       <button class = "buy-button" (click)="addtoCart(item)">THÊM VÀO GIỎ HÀNG</button>
     </mat-card-actions>
   </mat-card>
-}
+
 </div>
 <p class = "add">Sách học từ vựng tiếng Anh theo chủ đề MCbooks chuyên xuất bản các dòng sách học từ vựng Tiếng Anh theo các chủ đề, chủ điểm đa dạng và phong phú như du lịch, văn phòng, nhà hàng, khách sạn...
   Sách từ vựng tiếng Anh tốt nhất hiện nay. Các đầu sách học từ vựng tiếng Anh của chúng tôi được đầu tư bài bản về chất lượng và được viết bởi những tác giả nổi tiếng của Việt Nam và Thế Giới

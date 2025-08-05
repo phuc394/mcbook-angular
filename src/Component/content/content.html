@@ -33,6 +33,9 @@
     </div>
   </mat-drawer>
   <mat-drawer-content>
-      <app-card (addtoCartEvent)="addToCart($event)"></app-card>
+      @for (item of booklist; track $index){
+        <app-card (addtoCartEvent)="addToCart($event)" [item]="item"></app-card>
+
+      }
   </mat-drawer-content>
 </mat-drawer-container>

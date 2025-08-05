@@ -5,6 +5,7 @@ import {Nav} from '../Component/nav/nav';
 import {BreadCrumb} from '../Component/bread-crumb/bread-crumb';
 import {Content} from '../Component/content/content';
 import {Footer} from '../Component/footer/footer';
+import {ItemModel} from '../models/item.model';
 
 @Component({
   selector: 'app-root',
@@ -13,5 +14,12 @@ import {Footer} from '../Component/footer/footer';
   styleUrl: './app.scss'
 })
 export class App {
+  cartItems: ItemModel[] = [];
+
   protected readonly title = signal('mcbook');
+
+  addToCart (newItem: ItemModel){
+    this.cartItems.push(newItem)
+    console.log('Item added to cart:', this.cartItems);
+  }
 }

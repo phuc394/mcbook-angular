@@ -13,6 +13,6 @@ import {MAT_DIALOG_DATA, MatDialog, MatDialogContent, MatDialogTitle} from '@ang
 export class Dialog {
   data = inject(MAT_DIALOG_DATA);
   constructor() {
-    console.log(this.data);
+    console.log(this.data.cartItem);
   }
 }
