@@ -1,0 +1,6 @@
+<h2 mat-dialog-title>Favorite Animal</h2>
+<mat-dialog-content>
+  @for (item of this.data.cartItems; track item.id){
+    <p>{{item.title}}</p>
+  }
+</mat-dialog-content>

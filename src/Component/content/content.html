@@ -17,14 +17,14 @@
       </mat-slider>
       <h2>Sách bán chạy</h2>
       <div class="book-item">
-        <img class = "cover-best" ngSrc="https://mcbooks.vn/wp-content/uploads/2024/10/Bia-3D-Destination-B2-Dap-an-tren-app-Khong-co-dap-an.jpg" alt="Book Cover" height="43" width="152">
+        <img class = "cover-best" src="https://mcbooks.vn/wp-content/uploads/2024/10/Bia-3D-Destination-B2-Dap-an-tren-app-Khong-co-dap-an.jpg" alt="Book Cover">
         <div class="book-info">
           <p class="book-title">Destination B2 - Grammar & Vocabulary with Answer Key On MCBooks App</p>
           <p class="book-price">189.000đ</p>
         </div>
       </div>
       <div class="book-item">
-        <img class = "cover-best" ngSrc="https://mcbooks.vn/wp-content/uploads/2024/10/Bia-3D-Destination-C1C2-Dap-an-tren-app-Khong-co-dap-an.jpg" alt="Book Cover" height="43" width="152">
+        <img class = "cover-best" src="https://mcbooks.vn/wp-content/uploads/2024/10/Bia-3D-Destination-C1C2-Dap-an-tren-app-Khong-co-dap-an.jpg" alt="Book Cover">
         <div class="book-info">
           <p class="book-title">Destination C1&C2 - Grammar & Vocabulary with Answer Key On MCBooks App</p>
           <p class="book-price">178.000₫</p>
@@ -32,5 +32,7 @@
       </div>
     </div>
   </mat-drawer>
-  <mat-drawer-content></mat-drawer-content>
+  <mat-drawer-content>
+      <app-card (addtoCartEvent)="addToCart($event)"></app-card>
+  </mat-drawer-content>
 </mat-drawer-container>

@@ -1,11 +1,23 @@
-import { Component } from '@angular/core';
+import {Component, inject} from '@angular/core';
+import {MatButton} from '@angular/material/button';
+import {MatDialog} from '@angular/material/dialog';
+import {Dialog} from '../dialog/dialog';
+import {ItemModel} from '../../models/item.model';
 
 @Component({
   selector: 'app-header',
-  imports: [],
+  imports: [
+    MatButton
+  ],
   templateUrl: './header.html',
   styleUrl: './header.scss'
 })
 export class Header {
-
+  dialog = inject(MatDialog);
+  openDialog() {
+    this.dialog.open(Dialog, {
+      data: {
+      },
+    });
+  }
 }
