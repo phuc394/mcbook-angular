@@ -7,5 +7,4 @@ export class AppComponent {
         this.cartItems.push(newItem);
         console.log('Item added to cart:', newItem);
       }
-
 }

@@ -90,4 +90,18 @@ mat-slider {
   color: #008AE6;
 }
 
+.book-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-evenly;
+  align-items: stretch;
+  margin-top: 1rem;
+  padding: 0 2rem;
+}
+.add  {
+  padding: 0 2rem;
+}
+
+
 

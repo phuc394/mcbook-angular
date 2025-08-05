@@ -59,10 +59,21 @@ input[type="text"], input[type="search"] {
   padding: 0.3rem 0.5rem;
 }
 
-.cart, .user {
+.user {
   width: 2.2rem;
   height: 2.2rem;
   background: #008AE6;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.cart {
+  width: 2.2rem;
+  height: 2.2rem;
   color: #fff;
   display: flex;
   align-items: center;

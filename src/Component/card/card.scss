@@ -1,17 +1,5 @@
-* {
-  flex: 1 1 0;
-  font-size: 1.1rem;
-  margin-bottom: 2rem;
-}
 
-.book-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: space-between;
-  align-items: stretch;
-  margin-top: 1rem;
-}
+
 
 .book-details {
   background: #fff;
@@ -56,8 +44,6 @@
   margin-top: 0.5rem;
 }
 
-.add {
-  padding-right: 0.7rem;
-  padding-left: 0.7rem;
-  margin-top: 1rem;
+mat-drawer-content {
+  padding: 1rem 1rem 1rem 1rem;
 }

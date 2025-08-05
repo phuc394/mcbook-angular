@@ -9,15 +9,12 @@ import {ItemModel} from '../models/item.model';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Header, Nav, BreadCrumb, Content, Footer],
+  imports: [ Header, Nav, BreadCrumb, Content, Footer],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
   cartItems: ItemModel[] = [];
-
-  protected readonly title = signal('mcbook');
-
   addToCart (newItem: ItemModel){
     this.cartItems.push(newItem)
     console.log('Item added to cart:', this.cartItems);
