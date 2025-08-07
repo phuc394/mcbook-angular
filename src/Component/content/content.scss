@@ -1,7 +1,7 @@
 .example-container {
   width: 80vw;
-  height: 750px;
-  margin: 10px 10px 10px 10%;
+  height: 800px;
+  margin: 10px 10px 10px 8%;
   /* The background property is added to clearly distinguish the borders between drawer and main
      content */
   background: #eee;
@@ -11,8 +11,8 @@ mat-drawer {
   background: #fff;
   border-radius: 0.5rem;
   padding: 1.5rem 1rem;
-  min-width: 220px;
-  max-width: 290px;
+  min-width: 300px;
+  max-width: 20%;
   flex-shrink: 0;
 }
 
@@ -93,16 +93,13 @@ mat-slider {
 .book-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 10px;
   justify-content: space-evenly;
   align-items: stretch;
   margin-top: 1rem;
   padding: 0 2rem;
 }
-.add  {
-  padding: 0 2rem;
-  font-size: 1.2rem;
-}
+
 
 
 

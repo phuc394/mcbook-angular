@@ -1,0 +1,29 @@
+<h2 class="section-heading">Giỏ hàng</h2>
+<div class="cart-item-box">
+@for (itemCart of this.productService.cartList; track itemCart.id) {
+  <div class="card">
+    <div class="img-box">
+      <img src="{{itemCart.image}}" alt= "product cover" class="product-img">
+    </div>
+    <div class="detail">
+      <h4 class="product-name">{{itemCart.title}}</h4>
+      <span class="quantity">Số lượng: {{itemCart.quantity }}</span>
+      <span class="price">Giá niêm yết: {{itemCart.price | number:'1.0-0'}}đ</span>
+    </div>
+    <span class="material-symbols-outlined" (click)="productService.deleteCart(itemCart.id)">delete</span>
+  </div>
+}
+
+  <div class="total">
+      <span>Tổng cộng</span>  <span id="total">{{this.productService.totalPrice | number:'1.0-0'}}đ</span>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+

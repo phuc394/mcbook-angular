@@ -11,7 +11,7 @@
         <li><a href="">Sách học tiếng Trung</a></li>
       </ul>
       <h2>Lọc theo giá sản phẩm</h2>
-      <mat-slider min="200" max="500">
+      <mat-slider min="6500" max="25000" step="100" showTickMarks discrete [displayWith]="formatLabel">
         <input value="300" matSliderStartThumb>
         <input value="500" matSliderEndThumb>
       </mat-slider>
@@ -33,16 +33,12 @@
     </div>
   </mat-drawer>
   <mat-drawer-content>
-    <p class ="add">Sách học từ vựng tiếng Anh đỉnh cao của Mcbooks với hàng loạt các đầu sách đến từ các tác giả nổi tiếng như Tự học
-      2000 từ vựng tiếng Anh theo chủ đề của tác giả The Windy, Mind Map English Vocabulary của tác giả Hoàng Ngân…</p>
 
     <div class="book-list">
-      @for (item of booklist; track $index){
-        <app-card (addtoCartEvent)="addToCart($event)" [item]="item"></app-card>
+      @for (item of productList; track item.id) {
+        <app-card [item] = "item"></app-card>
       }
     </div>
-    <p class = "add">Sách học từ vựng tiếng Anh theo chủ đề MCbooks chuyên xuất bản các dòng sách học từ vựng Tiếng Anh theo các chủ đề, chủ điểm đa dạng và phong phú như du lịch, văn phòng, nhà hàng, khách sạn...
-      Sách từ vựng tiếng Anh tốt nhất hiện nay. Các đầu sách học từ vựng tiếng Anh của chúng tôi được đầu tư bài bản về chất lượng và được viết bởi những tác giả nổi tiếng của Việt Nam và Thế Giới
-      như The Windy, Nguyễn Anh Đức... nên bạn đọc hoàn toàn có thể yên tâm tham khảo và theo học.</p>
+
   </mat-drawer-content>
 </mat-drawer-container>

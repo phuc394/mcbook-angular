@@ -60,8 +60,8 @@ input[type="text"], input[type="search"] {
 }
 
 .user {
-  width: 2.2rem;
-  height: 2.2rem;
+  width: 2.3rem;
+  height: 2.3rem;
   background: #008AE6;
   color: #fff;
   display: flex;
@@ -72,17 +72,20 @@ input[type="text"], input[type="search"] {
 }
 
 .cart {
-  width: 2.2rem;
-  height: 2.2rem;
-  color: #fff;
+  width: 2.3rem;
+  height: 2.3rem;
+  color: #ffffff !important;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   cursor: pointer;
+  background: #008AE6;
+  border: none;
 }
 
 .cart:hover, .user:hover {
+
   background: #0071B3;
 }
 

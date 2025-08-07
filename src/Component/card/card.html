@@ -1,14 +1,16 @@
-<mat-card class= "book-details" appearance="outlined">
-    <img class ="cover-list" src="{{item.image}}" alt="Book cover image">
+<div class="book-container">
+  <mat-card class="book-details" appearance="outlined" (click)="navigateToDetail(item.id)">
+    <img class="cover-list" src="{{item.image}}" alt="Book cover image">
     <mat-card-content>
       <mat-card-header>
-        <mat-card-title class ="book-details-title">{{item.title}}</mat-card-title>
-        <mat-card-subtitle class ="book-price">{{item.price}}</mat-card-subtitle>
+        <mat-card-title class="book-details-title">{{item.title}}</mat-card-title>
+        <mat-card-subtitle class="book-price">{{item.price |  number:'1.0-0' }}đ</mat-card-subtitle>
       </mat-card-header>
     </mat-card-content>
     <mat-card-actions>
-      <button class = "buy-button" (click)="addtoCart(item)">THÊM VÀO GIỎ HÀNG</button>
+      <button class="buy-button" (click)="$event.stopPropagation(); addProductToCart(item.id)">THÊM VÀO GIỎ HÀNG</button>
     </mat-card-actions>
   </mat-card>
+</div>
 
 

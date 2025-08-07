@@ -1,0 +1,23 @@
+<app-header></app-header>
+<app-nav></app-nav>
+<app-bread-crumb></app-bread-crumb>
+<mat-card class="example-card" appearance="outlined">
+<div class = "cover">
+  <img mat-card-image src="{{productDetail.image}}" alt="Book cover image">
+</div>
+  <div class ="book-details">
+  <mat-card-header>
+    <h2>{{productDetail.title}}</h2>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      {{productDetail.description}}
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <span class="price">{{productDetail.price | number: '1.0-0'}}đ</span>
+    <button mat-flat-button (click)="addProductToCart(productDetail.id)">Mua</button>
+  </mat-card-actions>
+  </div>
+</mat-card>
+<app-footer></app-footer>
